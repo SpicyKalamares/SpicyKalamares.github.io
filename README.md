@@ -31,10 +31,14 @@
     <li>
       <h2>Prelim Period</h2>
       <ul id="prelim-repositories-list"></ul>
+      <h3>Prelim Exam</h3>
+      <ul id="prelimexam-repositories-list"></ul>
     </li>
     <li>
       <h2>Midterm Period</h2>
       <ul id="midterm-repositories-list"></ul>
+      <h3>Midterm Exam</h3>
+      <ul id="midtermexam-repositories-list"></ul>
     </li>
     <li>
       <h2>Final Period</h2>
@@ -69,10 +73,17 @@
       'CPE232_HOA15'
     ];
 
+    const prelimExamRepositories = [
+      'Reyes_PrelimExam'
+    ];
+
+    const midtermExamRepositories = [
+      'Reyes_MidtermExam'
+    ];
+
     // Display the specified repositories for Prelim Period
     const prelimRepositoriesList = document.getElementById('prelim-repositories-list');
-    const midtermRepositoriesList = document.getElementById('midterm-repositories-list');
-    const finalRepositoriesList = document.getElementById('final-repositories-list');
+    const prelimExamRepositoriesList = document.getElementById('prelimexam-repositories-list');
 
     prelimRepositories.forEach(repoName => {
       const listItem = document.createElement('li');
@@ -85,7 +96,21 @@
       prelimRepositoriesList.appendChild(listItem);
     });
 
+    prelimExamRepositories.forEach(repoName => {
+      const listItem = document.createElement('li');
+      const link = document.createElement('a');
+
+      link.href = `https://github.com/${username}/${repoName}`;
+      link.textContent = repoName;
+
+      listItem.appendChild(link);
+      prelimExamRepositoriesList.appendChild(listItem);
+    });
+
     // Display the specified repositories for Midterm Period
+    const midtermRepositoriesList = document.getElementById('midterm-repositories-list');
+    const midtermExamRepositoriesList = document.getElementById('midtermexam-repositories-list');
+
     midtermRepositories.forEach(repoName => {
       const listItem = document.createElement('li');
       const link = document.createElement('a');
@@ -97,7 +122,21 @@
       midtermRepositoriesList.appendChild(listItem);
     });
 
+    midtermExamRepositories.forEach(repoName => {
+      const listItem = document.createElement('li');
+      const link = document.createElement('a');
+
+      link.href = `https://github.com/${username}/${repoName}`;
+      link.textContent = repoName;
+
+      listItem.appendChild(link);
+      midtermExamRepositoriesList.appendChild(listItem);
+    });
+
     // Display the specified repositories for Final Period
+    const finalRepositoriesList = document.getElementById('final-repositories-list');
+    const finalExamRepositoriesList = document.getElementById('finalexam-repositories-list');
+
     finalRepositories.forEach(repoName => {
       const listItem = document.createElement('li');
       const link = document.createElement('a');
