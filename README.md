@@ -32,9 +32,9 @@
     const username = 'SpicyKalamares';
     
     const repositoriesToShow = [
-    'https://github.com/SpicyKalamares/CPE232_HOA1',
-    'repo2',
-    'repo3'
+    'CPE232_HOA1',
+    'CPE232_HOA2',
+    'CPE232_HOA3'
     // Add more repositories as needed
   ];
 
