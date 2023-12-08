@@ -33,11 +33,11 @@
       <ul id="prelim-repositories-list"></ul>
     </li>
     <li>
-      <h3>Midterm Period</h3>
+      <h2>Midterm Period</h2>
       <ul id="midterm-repositories-list"></ul>
     </li>
     <li>
-      <h4>Final Period</h4>
+      <h2>Final Period</h2>
       <ul id="final-repositories-list"></ul>
     </li>
   </ul>
