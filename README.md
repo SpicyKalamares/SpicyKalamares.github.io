@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -26,32 +27,36 @@
 </head>
 <body>
   <h1>My GitHub Repositories</h1>
-  <ul id="repositories-list"></ul>
+  <ul id="repositories-list">
+    <li>
+      <h2>Prelim Period</h2>
+      <ul id="prelim-repositories-list"></ul>
+    </li>
+  </ul>
 
   <script>
     const username = 'SpicyKalamares';
-    
-    const repositoriesToShow = [
-    <h1>Prelim Period</h1>
-    'CPE232_HOA1',
-    'CPE232_HOA2',
-    'CPE232_HOA3'
-    // Add more repositories as needed
-  ];
 
-  // Display the specified repositories
-  const repositoriesList = document.getElementById('repositories-list');
+    const prelimRepositories = [
+      'CPE232_HOA1',
+      'CPE232_HOA2',
+      'CPE232_HOA3'
+      // Add more repositories as needed
+    ];
 
-  repositoriesToShow.forEach(repoName => {
-    const listItem = document.createElement('li');
-    const link = document.createElement('a');
+    // Display the specified repositories
+    const prelimRepositoriesList = document.getElementById('prelim-repositories-list');
 
-    link.href = `https://github.com/${username}/${repoName}`;
-    link.textContent = repoName;
+    prelimRepositories.forEach(repoName => {
+      const listItem = document.createElement('li');
+      const link = document.createElement('a');
 
-    listItem.appendChild(link);
-    repositoriesList.appendChild(listItem);
-  });
+      link.href = `https://github.com/${username}/${repoName}`;
+      link.textContent = repoName;
+
+      listItem.appendChild(link);
+      prelimRepositoriesList.appendChild(listItem);
+    });
   </script>
 </body>
 </html>
