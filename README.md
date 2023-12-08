@@ -43,6 +43,8 @@
       <h2>Final Period</h2>
       <ul id="final-repositories-list"></ul>
     </li>
+      <h1>Relection and Learning from the course</h1>
+      <h2>hehehe</h2>
   </ul>
 
   <script>
