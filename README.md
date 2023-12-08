@@ -29,29 +29,28 @@
   <ul id="repositories-list"></ul>
 
   <script>
-    // Replace 'your-username' with your GitHub username
     const username = 'SpicyKalamares';
+    
+    const repositoriesToShow = [
+    'https://github.com/SpicyKalamares/CPE232_HOA1',
+    'repo2',
+    'repo3'
+    // Add more repositories as needed
+  ];
 
-    // Fetch GitHub repositories
-    fetch(`https://api.github.com/users/${username}/repos`)
-      .then(response => response.json())
-      .then(repositories => {
-        const repositoriesList = document.getElementById('repositories-list');
+  // Display the specified repositories
+  const repositoriesList = document.getElementById('repositories-list');
 
-        repositories.forEach(repo => {
-          const listItem = document.createElement('li');
-          const link = document.createElement('a');
+  repositoriesToShow.forEach(repoName => {
+    const listItem = document.createElement('li');
+    const link = document.createElement('a');
 
-          link.href = repo.html_url;
-          link.textContent = repo.name;
+    link.href = `https://github.com/${username}/${repoName}`;
+    link.textContent = repoName;
 
-          listItem.appendChild(link);
-          repositoriesList.appendChild(listItem);
-        });
-      })
-      .catch(error => {
-        console.error('Error fetching GitHub repositories:', error);
-      });
+    listItem.appendChild(link);
+    repositoriesList.appendChild(listItem);
+  });
   </script>
 </body>
 </html>
