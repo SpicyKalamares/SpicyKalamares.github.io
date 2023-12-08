@@ -71,8 +71,8 @@
 
     // Display the specified repositories for Prelim Period
     const prelimRepositoriesList = document.getElementById('prelim-repositories-list');
-    const prelimRepositoriesList = document.getElementById('midterm-repositories-list');
-    const prelimRepositoriesList = document.getElementById('final-repositories-list');
+    const midtermRepositoriesList = document.getElementById('midterm-repositories-list');
+    const finalRepositoriesList = document.getElementById('final-repositories-list');
 
     prelimRepositories.forEach(repoName => {
       const listItem = document.createElement('li');
@@ -83,6 +83,30 @@
 
       listItem.appendChild(link);
       prelimRepositoriesList.appendChild(listItem);
+    });
+
+    // Display the specified repositories for Midterm Period
+    midtermRepositories.forEach(repoName => {
+      const listItem = document.createElement('li');
+      const link = document.createElement('a');
+
+      link.href = `https://github.com/${username}/${repoName}`;
+      link.textContent = repoName;
+
+      listItem.appendChild(link);
+      midtermRepositoriesList.appendChild(listItem);
+    });
+
+    // Display the specified repositories for Final Period
+    finalRepositories.forEach(repoName => {
+      const listItem = document.createElement('li');
+      const link = document.createElement('a');
+
+      link.href = `https://github.com/${username}/${repoName}`;
+      link.textContent = repoName;
+
+      listItem.appendChild(link);
+      finalRepositoriesList.appendChild(listItem);
     });
   </script>
 </body>
