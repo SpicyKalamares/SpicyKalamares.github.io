@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -31,7 +30,7 @@
 
   <script>
     // Replace 'your-username' with your GitHub username
-    const username = 'your-username';
+    const username = 'SpicyKalamares';
 
     // Fetch GitHub repositories
     fetch(`https://api.github.com/users/${username}/repos`)
