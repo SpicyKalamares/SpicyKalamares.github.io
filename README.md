@@ -44,7 +44,7 @@
       <ul id="final-repositories-list"></ul>
     </li>
       <h1>Relection and Learning from the course</h1>
-      <h2>hehehe</h2>
+      <h3>hehehe</h3>
   </ul>
 
   <script>
