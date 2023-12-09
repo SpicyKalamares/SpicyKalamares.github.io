@@ -83,6 +83,10 @@
         <li>
           <a href="https://github.com/SpicyKalamares/CPE232_HOA5">CPE232_HOA5</a>
         </li>
+        <!-- Include Prelim Exam in the Prelim Period dropdown -->
+        <li>
+          <a href="https://github.com/SpicyKalamares/Reyes_PrelimExam">Reyes_PrelimExam</a>
+        </li>
       </ul>
       <h3>Prelim Exam</h3>
       <ul id="prelimexam-repositories-list"></ul>
@@ -129,6 +133,10 @@
         <li>
           <a href="https://github.com/SpicyKalamares/CPE232_HOA15">CPE232_HOA15</a>
         </li>
+        <!-- Include Final Exam in the Final Period dropdown -->
+        <li>
+          <a href="https://github.com/SpicyKalamares/Reyes_FinalExam">Reyes_FinalExam</a>
+        </li>
       </ul>
     </li>
     <li>
@@ -145,7 +153,7 @@
     const finalExamRepositories = ['Reyes_FinalExam'];
 
     // Display the specified repositories for Prelim Period
-    const prelimRepositoriesList = document.getElementById('prelim-repositories-list');
+    const prelimRepositoriesList = document.getElementById('prelimexam-repositories-list'); // Change to prelimexam-repositories-list
     const prelimExamRepositoriesList = document.getElementById('prelimexam-repositories-list');
     const prelimDropdown = document.getElementById('prelim-dropdown');
 
@@ -188,7 +196,7 @@
     });
 
     // Display the specified repositories for Final Period
-    const finalExamRepositoriesList = document.getElementById('finalexam-repositories-list');
+    const finalExamRepositoriesList = document.getElementById('final-dropdown'); // Change to final-dropdown
     const finalDropdown = document.getElementById('final-dropdown');
 
     finalExamRepositories.forEach(repoName => {
