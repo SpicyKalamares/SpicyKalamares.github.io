@@ -133,7 +133,7 @@
     ];
 
     // Display the specified repositories for Prelim Period
-    const prelimRepositoriesList = document.getElementById('prelim-repositories-list');
+    //const prelimRepositoriesList = document.getElementById('prelim-repositories-list');
     const prelimExamRepositoriesList = document.getElementById('prelimexam-repositories-list');
     const prelimDropdown = document.getElementById('prelim-dropdown');
 
