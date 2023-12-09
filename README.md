@@ -96,13 +96,13 @@
   <script>
     const username = 'SpicyKalamares';
 
-    const prelimRepositories = [
+   /* const prelimRepositories = [
       'CPE232_HOA1',
       'CPE232_HOA2',
       'CPE232_HOA3',
       'CPE232_HOA4',
       'CPE232_HOA5'
-    ];
+    ];*/
 
     const midtermRepositories = [
       'CPE232_HOA6',
@@ -133,7 +133,7 @@
     ];
 
     // Display the specified repositories for Prelim Period
-    //const prelimRepositoriesList = document.getElementById('prelim-repositories-list');
+    const prelimRepositoriesList = document.getElementById('prelim-repositories-list');
     const prelimExamRepositoriesList = document.getElementById('prelimexam-repositories-list');
     const prelimDropdown = document.getElementById('prelim-dropdown');
 
