@@ -115,7 +115,31 @@
 
   <script>
     const username = 'SpicyKalamares';
+    
+    const prelimRepositories = [
+      'CPE232_HOA1',
+      'CPE232_HOA2',
+      'CPE232_HOA3',
+      'CPE232_HOA4',
+      'CPE232_HOA5'
+    ];
 
+    const midtermRepositories = [
+      'CPE232_HOA6',
+      'CPE232_HOA7',
+      'CPE232_HOA8',
+      'CPE232_HOA9',
+      'CPE232_HOA10'
+    ];
+
+    const finalRepositories = [
+      'CPE232_HOA11',
+      'CPE232_HOA12',
+      'CPE232_HOA13',
+      'CPE232_HOA14',
+      'CPE232_HOA15'
+    ];
+    
     const prelimExamRepositories = [
       'Reyes_PrelimExam'
     ];
