@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Github Repositories</title>
+  <title>My GitHub Repositories</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
     body {
@@ -56,14 +56,17 @@
     .dropdown-btn:hover {
       background-color: #1a0dab;
     }
+    .dropdown-arrow::after {
+      content: " ▼"; /* Unicode character for down arrow */
+    }
   </style>
 </head>
 <body>
-  <h1>CPE232 - Managing Enterprise Server</h1>
+  <h1>CPE232 - Managing Enterpise Servers</h1>
   <ul id="repositories-list">
     <li>
       <i class="fas fa-code icon"></i>
-      <button class="dropdown-btn" id="prelim-period">Prelim Period</button>
+      <button class="dropdown-btn dropdown-arrow" id="prelim-period">Prelim Period</button>
       <ul class="dropdown" id="prelim-dropdown">
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA1">CPE232_HOA1</a></li>
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA2">CPE232_HOA2</a></li>
@@ -77,7 +80,7 @@
     </li>
     <li>
       <i class="fas fa-code icon"></i>
-      <button class="dropdown-btn" id="midterm-period">Midterm Period</button>
+      <button class="dropdown-btn dropdown-arrow" id="midterm-period">Midterm Period</button>
       <ul class="dropdown" id="midterm-dropdown">
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA6">CPE232_HOA6</a></li>
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA7">CPE232_HOA7</a></li>
@@ -92,7 +95,7 @@
     </li>
     <li>
       <i class="fas fa-code icon"></i>
-      <button class="dropdown-btn" id="final-period">Final Period</button>
+      <button class="dropdown-btn dropdown-arrow" id="final-period">Final Period</button>
       <ul class="dropdown" id="final-dropdown">
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA11">CPE232_HOA11</a></li>
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA12">CPE232_HOA12</a></li>
