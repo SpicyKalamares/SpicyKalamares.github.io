@@ -39,6 +39,14 @@
     .icon {
       margin-right: 8px;
     }
+    .dropdown {
+      display: none;
+      margin-top: 10px;
+    }
+    .dropdown-toggle:hover + .dropdown,
+    .dropdown:hover {
+      display: block;
+    }
   </style>
 </head>
 <body>
