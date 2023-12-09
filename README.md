@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -53,23 +54,42 @@
   <h1>My GitHub Repositories</h1>
   <ul id="repositories-list">
     <li>
-      <h2>Prelim Period</h2>
+      <i class="fas fa-code icon"></i>
+      <h2 class="dropdown-toggle">Prelim Period</h2>
+      <ul class="dropdown" id="prelim-dropdown">
+        <li>
+          <h3>Prelim Exam</h3>
+          <ul id="prelimexam-repositories-list"></ul>
+        </li>
+      </ul>
       <ul id="prelim-repositories-list"></ul>
-      <h3>Prelim Exam</h3>
-      <ul id="prelimexam-repositories-list"></ul>
     </li>
     <li>
-      <h2>Midterm Period</h2>
+      <i class="fas fa-code icon"></i>
+      <h2 class="dropdown-toggle">Midterm Period</h2>
+      <ul class="dropdown" id="midterm-dropdown">
+        <li>
+          <h3>Midterm Exam</h3>
+          <ul id="midtermexam-repositories-list"></ul>
+        </li>
+      </ul>
       <ul id="midterm-repositories-list"></ul>
-      <h3>Midterm Exam</h3>
-      <ul id="midtermexam-repositories-list"></ul>
     </li>
     <li>
-      <h2>Final Period</h2>
+      <i class="fas fa-code icon"></i>
+      <h2 class="dropdown-toggle">Final Period</h2>
+      <ul class="dropdown" id="final-dropdown">
+        <li>
+          <h3>Final Exam</h3>
+          <ul id="finalexam-repositories-list"></ul>
+        </li>
+      </ul>
       <ul id="final-repositories-list"></ul>
     </li>
-      <h1>Relection and Learning from the course</h1>
-        <h4>  After takin this course </h4>
+    <li>
+      <h1>Reflection and Learning from the course</h1>
+      <h4>After taking this course</h4>
+    </li>
   </ul>
 
   <script>
@@ -105,6 +125,10 @@
 
     const midtermExamRepositories = [
       'Reyes_MidtermExam'
+    ];
+
+    const finalExamRepositories = [
+      'Reyes_FinalExam'
     ];
 
     // Display the specified repositories for Prelim Period
@@ -172,6 +196,17 @@
 
       listItem.appendChild(link);
       finalRepositoriesList.appendChild(listItem);
+    });
+
+    finalExamRepositories.forEach(repoName => {
+      const listItem = document.createElement('li');
+      const link = document.createElement('a');
+
+      link.href = `https://github.com/${username}/${repoName}`;
+      link.textContent = repoName;
+
+      listItem.appendChild(link);
+      finalExamRepositoriesList.appendChild(listItem);
     });
   </script>
 </body>
