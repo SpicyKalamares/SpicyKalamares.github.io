@@ -62,7 +62,7 @@
   </style>
 </head>
 <body>
-  <h1>CPE232 - Managing Enterpise Servers</h1>
+  <h1>CPE232 - Managing Enterprise Servers</h1>
   <ul id="repositories-list">
     <li>
       <i class="fas fa-code icon"></i>
@@ -73,10 +73,10 @@
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA3">CPE232_HOA3</a></li>
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA4">CPE232_HOA4</a></li>
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA5">CPE232_HOA5</a></li>
-        <h3>Prelim Exam</h3>
-          <ul id="prelimexam-repositories-list"></ul>
       </ul>
       <ul id="prelim-repositories-list"></ul>
+      <h3>Prelim Exam</h3>
+      <ul id="prelimexam-repositories-list"></ul>
     </li>
     <li>
       <i class="fas fa-code icon"></i>
@@ -87,11 +87,10 @@
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA8">CPE232_HOA8</a></li>
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA9">CPE232_HOA9</a></li>
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA10">CPE232_HOA10</a></li>
-          <h3>Midterm Exam</h3>
-          <ul id="midtermexam-repositories-list"></ul>
-        </li>
       </ul>
       <ul id="midterm-repositories-list"></ul>
+      <h3>Midterm Exam</h3>
+      <ul id="midtermexam-repositories-list"></ul>
     </li>
     <li>
       <i class="fas fa-code icon"></i>
@@ -102,10 +101,9 @@
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA13">CPE232_HOA13</a></li>
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA14">CPE232_HOA14</a></li>
         <li><a href="https://github.com/SpicyKalamares/CPE232_HOA15">CPE232_HOA15</a></li>
-          <h3>Final Exam</h3>
-        </li>
       </ul>
       <ul id="final-repositories-list"></ul>
+      <h3>Final Exam</h3>
     </li>
     <li>
       <h1>Reflection and Learning from the course</h1>
@@ -115,7 +113,7 @@
 
   <script>
     const username = 'SpicyKalamares';
-    
+
     const prelimRepositories = [
       'CPE232_HOA1',
       'CPE232_HOA2',
@@ -139,7 +137,7 @@
       'CPE232_HOA14',
       'CPE232_HOA15'
     ];
-    
+
     const prelimExamRepositories = [
       'Reyes_PrelimExam'
     ];
