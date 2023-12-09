@@ -57,10 +57,11 @@
       <i class="fas fa-code icon"></i>
       <h2 class="dropdown-toggle" id="prelim-period">Prelim Period</h2>
       <ul class="dropdown" id="prelim-dropdown">
-        <li>
-          <h3>Prelim Exam</h3>
-          <ul id="prelimexam-repositories-list"></ul>
-        </li>
+        <li><a href="https://github.com/SpicyKalamares/CPE232_HOA1">CPE232_HOA1</a></li>
+        <li><a href="https://github.com/SpicyKalamares/CPE232_HOA2">CPE232_HOA2</a></li>
+        <li><a href="https://github.com/SpicyKalamares/CPE232_HOA3">CPE232_HOA3</a></li>
+        <li><a href="https://github.com/SpicyKalamares/CPE232_HOA4">CPE232_HOA4</a></li>
+        <li><a href="https://github.com/SpicyKalamares/CPE232_HOA5">CPE232_HOA5</a></li>
       </ul>
       <ul id="prelim-repositories-list"></ul>
     </li>
