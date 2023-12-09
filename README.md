@@ -55,7 +55,7 @@
   <ul id="repositories-list">
     <li>
       <i class="fas fa-code icon"></i>
-      <h2 class="dropdown-toggle">Prelim Period</h2>
+      <h2 class="dropdown-toggle" id="prelim-period">Prelim Period</h2>
       <ul class="dropdown" id="prelim-dropdown">
         <li>
           <h3>Prelim Exam</h3>
@@ -66,7 +66,7 @@
     </li>
     <li>
       <i class="fas fa-code icon"></i>
-      <h2 class="dropdown-toggle">Midterm Period</h2>
+      <h2 class="dropdown-toggle" id="midterm-period">Midterm Period</h2>
       <ul class="dropdown" id="midterm-dropdown">
         <li>
           <h3>Midterm Exam</h3>
@@ -77,7 +77,7 @@
     </li>
     <li>
       <i class="fas fa-code icon"></i>
-      <h2 class="dropdown-toggle">Final Period</h2>
+      <h2 class="dropdown-toggle" id="final-period">Final Period</h2>
       <ul class="dropdown" id="final-dropdown">
         <li>
           <h3>Final Exam</h3>
@@ -134,6 +134,7 @@
     // Display the specified repositories for Prelim Period
     const prelimRepositoriesList = document.getElementById('prelim-repositories-list');
     const prelimExamRepositoriesList = document.getElementById('prelimexam-repositories-list');
+    const prelimDropdown = document.getElementById('prelim-dropdown');
 
     prelimRepositories.forEach(repoName => {
       const listItem = document.createElement('li');
@@ -157,9 +158,16 @@
       prelimExamRepositoriesList.appendChild(listItem);
     });
 
+    // Add click event listener to Prelim Period header
+    document.getElementById('prelim-period').addEventListener('click', function() {
+      // Toggle the visibility of the Prelim repositories list
+      prelimDropdown.style.display = prelimDropdown.style.display === 'none' ? 'block' : 'none';
+    });
+
     // Display the specified repositories for Midterm Period
     const midtermRepositoriesList = document.getElementById('midterm-repositories-list');
     const midtermExamRepositoriesList = document.getElementById('midtermexam-repositories-list');
+    const midtermDropdown = document.getElementById('midterm-dropdown');
 
     midtermRepositories.forEach(repoName => {
       const listItem = document.createElement('li');
@@ -183,9 +191,16 @@
       midtermExamRepositoriesList.appendChild(listItem);
     });
 
+    // Add click event listener to Midterm Period header
+    document.getElementById('midterm-period').addEventListener('click', function() {
+      // Toggle the visibility of the Midterm repositories list
+      midtermDropdown.style.display = midtermDropdown.style.display === 'none' ? 'block' : 'none';
+    });
+
     // Display the specified repositories for Final Period
     const finalRepositoriesList = document.getElementById('final-repositories-list');
     const finalExamRepositoriesList = document.getElementById('finalexam-repositories-list');
+    const finalDropdown = document.getElementById('final-dropdown');
 
     finalRepositories.forEach(repoName => {
       const listItem = document.createElement('li');
@@ -207,6 +222,12 @@
 
       listItem.appendChild(link);
       finalExamRepositoriesList.appendChild(listItem);
+    });
+
+    // Add click event listener to Final Period header
+    document.getElementById('final-period').addEventListener('click', function() {
+      // Toggle the visibility of the Final repositories list
+      finalDropdown.style.display = finalDropdown.style.display === 'none' ? 'block' : 'none';
     });
   </script>
 </body>
