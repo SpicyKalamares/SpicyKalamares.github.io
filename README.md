@@ -85,11 +85,10 @@
         </li>
         <!-- Include Prelim Exam in the Prelim Period dropdown -->
         <li>
+          <h3>Prelim Exam</h3>
           <a href="https://github.com/SpicyKalamares/Reyes_PrelimExam">Reyes_PrelimExam</a>
         </li>
       </ul>
-      <h3>Prelim Exam</h3>
-      <ul id="prelimexam-repositories-list"></ul>
     </li>
     <li>
       <i class="fas fa-code icon"></i>
@@ -108,11 +107,10 @@
           <a href="https://github.com/SpicyKalamares/CPE232_HOA9">CPE232_HOA9</a>
         </li>
         <li>
+          <h3>Midterm Exam</h3>
           <a href="https://github.com/SpicyKalamares/CPE232_HOA10">CPE232_HOA10</a>
         </li>
       </ul>
-      <h3>Midterm Exam</h3>
-      <ul id="midtermexam-repositories-list"></ul>
     </li>
     <li>
       <i class="fas fa-code icon"></i>
@@ -132,10 +130,6 @@
         </li>
         <li>
           <a href="https://github.com/SpicyKalamares/CPE232_HOA15">CPE232_HOA15</a>
-        </li>
-        <!-- Include Final Exam in the Final Period dropdown -->
-        <li>
-          <a href="https://github.com/SpicyKalamares/Reyes_FinalExam">Reyes_FinalExam</a>
         </li>
       </ul>
     </li>
