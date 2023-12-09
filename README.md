@@ -3,24 +3,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My GitHub Repositories</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 20px;
+      background-color: #f8f9fa;
     }
     h1 {
-      color: #333;
+      color: #0366d6;
     }
     ul {
       list-style-type: none;
       padding: 0;
     }
     li {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease;
+    }
+    li:hover {
+      background-color: #f1f1f1;
     }
     a {
       text-decoration: none;
       color: #0366d6;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #1a0dab;
+    }
+    .icon {
+      margin-right: 8px;
     }
   </style>
 </head>
@@ -44,7 +61,7 @@
       <ul id="final-repositories-list"></ul>
     </li>
       <h1>Relection and Learning from the course</h1>
-      <h4>hehehe</h4>
+        <h4>  After takin this course </h4>
   </ul>
 
   <script>
