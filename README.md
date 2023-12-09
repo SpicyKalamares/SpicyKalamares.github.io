@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CPE232 - MAnaging Enterprise Server</title>
+  <title>My Github Repositories</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <style>
     body {
@@ -59,7 +59,7 @@
   </style>
 </head>
 <body>
-  <h1>My GitHub Repositories</h1>
+  <h1>CPE232 - Managing Enterprise Server</h1>
   <ul id="repositories-list">
     <li>
       <i class="fas fa-code icon"></i>
