@@ -9,7 +9,7 @@
     body {
       font-family: 'Arial', sans-serif;
       margin: 20px;
-      background-color: #f8f9fa;
+      background: url(https://e0.pxfuel.com/wallpapers/739/45/desktop-wallpaper-server-room-servers.jpg) center/cover no-repeat;
     }
 
     h1 {
