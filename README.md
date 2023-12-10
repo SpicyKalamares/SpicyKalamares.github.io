@@ -62,6 +62,7 @@
       border-radius: 0;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      outline: none;
     }
 
     .dropdown-btn:hover {
@@ -84,6 +85,7 @@
   <h1>CPE232 - Managing Enterprise Servers</h1>
   <ul id="repositories-list">
     <li>
+      <i class="fas fa-square icon"></i>
       <button class="dropdown-btn dropdown-arrow" id="prelim-period">Prelim Period</button>
       <ul class="dropdown" id="prelim-dropdown">
         <li>
@@ -109,7 +111,7 @@
       </ul>
     </li>
     <li>
-      <i class="fas fa-code icon"></i>
+      <i class="fas fa-square icon"></i>
       <button class="dropdown-btn dropdown-arrow" id="midterm-period">Midterm Period</button>
       <ul class="dropdown" id="midterm-dropdown">
         <li>
@@ -135,7 +137,7 @@
       </ul>
     </li>
     <li>
-      <i class="fas fa-code icon"></i>
+      <i class="fas fa-square icon"></i>
       <button class="dropdown-btn dropdown-arrow" id="final-period">Final Period</button>
       <ul class="dropdown" id="final-dropdown">
         <li>
