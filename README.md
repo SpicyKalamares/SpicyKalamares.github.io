@@ -88,7 +88,7 @@
       <button class="dropdown-btn dropdown-arrow" id="prelim-period">Prelim Period</button>
       <ul class="dropdown" id="prelim-dropdown">
         <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA1">CPE232_HOA1</a>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA1">CPE232_HOA1 - xdxd</a>
         </li>
         <li>
           <a href="https://github.com/SpicyKalamares/CPE232_HOA2">CPE232_HOA2</a>
