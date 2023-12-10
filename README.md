@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -58,7 +59,7 @@
       color: #ffffff;
       padding: 5px 10px;
       border: none;
-      border-radius: 4px;
+      border-radius: 0;
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
