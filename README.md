@@ -180,6 +180,20 @@
         finalRepositoriesList.style.display = finalRepositoriesList.style.display === 'none' ? 'block' : 'none';
       });
     });
+
+    // Add click event listener to Prelim Period button
+    document.getElementById('prelim-period').addEventListener('click', function () {
+      // Toggle the visibility of the Prelim repositories list
+      const prelimDropdown = document.getElementById('prelim-dropdown');
+      prelimDropdown.style.display = prelimDropdown.style.display === 'none' ? 'block' : 'none';
+    });
+
+    // Add click event listener to Midterm Period button
+    document.getElementById('midterm-period').addEventListener('click', function () {
+      // Toggle the visibility of the Midterm repositories list
+      const midtermDropdown = document.getElementById('midterm-dropdown');
+      midtermDropdown.style.display = midtermDropdown.style.display === 'none' ? 'block' : 'none';
+    });
   </script>
 </body>
 
