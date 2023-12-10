@@ -109,7 +109,7 @@
         'CPE232_HOA3',
         'CPE232_HOA4',
         'CPE232_HOA5',
-        'Reyes_PrelimExam'
+        'Prelim Exam: Reyes_PrelimExam'
       ];
 
       const midtermRepositories = [
@@ -118,7 +118,7 @@
         'CPE232_HOA8',
         'CPE232_HOA9',
         'CPE232_HOA10',
-        'Reyes_MidtermExam'
+        'Midterm Exam: Reyes_MidtermExam'
       ];
 
       const finalRepositories = [
@@ -126,8 +126,7 @@
         'CPE232_HOA12',
         'CPE232_HOA13',
         'CPE232_HOA14',
-        'CPE232_HOA15',
-        'Reyes_FinalExam'
+        'CPE232_HOA15'
       ];
 
       // Display the specified repositories for Prelim Period
