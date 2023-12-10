@@ -158,7 +158,7 @@
     </li>
     <li>
       <h1>Reflection and Learning from the Course</h1>
-      <h4>After taking this course</h4>
+      <h4>After taking this course, I was able to learn the basics of ansible and how important it is when there is a large number of servers in an enterprise. This makes the admin's work easy as they can install or update every server using one host only and this makes a good time management. Having this as an advantage, there is also a disadvantage where it requires a medium to high specification system to sustain all the process that the ansible will do to the servers. Now that the course comes to an end, i learned many  things such as making the codes and running it via ansible. Understanding the codes will be used so that I can explore how my codes work and I can easily find the errors that I encountered. With this course, I am able to have the skills that I can use as a computer engineering student. </h4>
     </li>
   </ul>
 
