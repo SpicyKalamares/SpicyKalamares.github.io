@@ -170,58 +170,25 @@
       const finalRepositoriesList = document.getElementById('final-dropdown');
       finalRepositoriesList.style.display = 'none';
 
-      finalRepositories.forEach(repoName => {
-        const listItem = document.createElement('li');
-        const link = document.createElement('a');
-
-        link.href = `https://github.com/${username}/${repoName}`;
-        link.textContent = repoName;
-
-        listItem.appendChild(link);
-        finalRepositoriesList.appendChild(listItem);
-      });
-
-      // Display the specified repositories for Prelim Period
-      const prelimRepositoriesList = document.getElementById('prelim-dropdown');
-      prelimRepositoriesList.style.display = 'none';
-
-      prelimRepositories.forEach(repoName => {
-        const listItem = document.createElement('li');
-        const link = document.createElement('a');
-
-        link.href = `https://github.com/${username}/${repoName}`;
-        link.textContent = repoName;
-
-        listItem.appendChild(link);
-        prelimRepositoriesList.appendChild(listItem);
-      });
-
-      // Display the specified repositories for Midterm Period
-      const midtermRepositoriesList = document.getElementById('midterm-dropdown');
-      midtermRepositoriesList.style.display = 'none';
-
-      midtermRepositories.forEach(repoName => {
-        const listItem = document.createElement('li');
-        const link = document.createElement('a');
-
-        link.href = `https://github.com/${username}/${repoName}`;
-        link.textContent = repoName;
-
-        listItem.appendChild(link);
-        midtermRepositoriesList.appendChild(listItem);
-      });
-
       // Add click event listener to Final Period button
       document.getElementById('final-period').addEventListener('click', function () {
         // Toggle the visibility of the Final repositories list
         finalRepositoriesList.style.display = finalRepositoriesList.style.display === 'none' ? 'block' : 'none';
       });
 
+      // Display the specified repositories for Prelim Period
+      const prelimRepositoriesList = document.getElementById('prelim-dropdown');
+      prelimRepositoriesList.style.display = 'none';
+
       // Add click event listener to Prelim Period button
       document.getElementById('prelim-period').addEventListener('click', function () {
         // Toggle the visibility of the Prelim repositories list
         prelimRepositoriesList.style.display = prelimRepositoriesList.style.display === 'none' ? 'block' : 'none';
       });
+
+      // Display the specified repositories for Midterm Period
+      const midtermRepositoriesList = document.getElementById('midterm-dropdown');
+      midtermRepositoriesList.style.display = 'none';
 
       // Add click event listener to Midterm Period button
       document.getElementById('midterm-period').addEventListener('click', function () {
