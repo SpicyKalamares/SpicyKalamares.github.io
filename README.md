@@ -142,10 +142,6 @@
   <script>
     const username = 'SpicyKalamares';
 
-    const prelimExamRepositories = ['Reyes_PrelimExam'];
-    const midtermExamRepositories = ['Reyes_MidtermExam'];
-    const finalExamRepositories = ['Reyes_FinalExam'];
-
     // Display the specified repositories for Prelim Period
     const prelimExamRepositoriesList = document.getElementById('prelim-dropdown');
     const prelimDropdown = document.getElementById('prelim-dropdown');
