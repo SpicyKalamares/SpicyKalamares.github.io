@@ -163,6 +163,7 @@
   </ul>
 
   <script>
+    document.addEventListener('DOMContentLoaded', function () {
 
       // Display the specified repositories for Final Period
       const finalRepositoriesList = document.getElementById('final-dropdown');
