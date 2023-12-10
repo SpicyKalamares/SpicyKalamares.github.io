@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -158,7 +157,7 @@
       </ul>
     </li>
     <li>
-      <h1>Reflection and Learning from the course</h1>
+      <h1>Reflection and Learning from the Course</h1>
       <h4>After taking this course</h4>
     </li>
   </ul>
