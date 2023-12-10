@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -84,7 +83,6 @@
   <h1>CPE232 - Managing Enterprise Servers</h1>
   <ul id="repositories-list">
     <li>
-      <i class="fas fa-code icon"></i>
       <button class="dropdown-btn dropdown-arrow" id="prelim-period">Prelim Period</button>
       <ul class="dropdown" id="prelim-dropdown">
         <li>
