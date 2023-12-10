@@ -87,7 +87,6 @@
       <i class="fas fa-code icon"></i>
       <button class="dropdown-btn dropdown-arrow" id="prelim-period">Prelim Period</button>
       <ul class="dropdown" id="prelim-dropdown">
-        <li class="dropdown-header">Prelim Exams</li>
         <li>
           <a href="https://github.com/SpicyKalamares/CPE232_HOA1">CPE232_HOA1</a>
         </li>
@@ -114,7 +113,6 @@
       <i class="fas fa-code icon"></i>
       <button class="dropdown-btn dropdown-arrow" id="midterm-period">Midterm Period</button>
       <ul class="dropdown" id="midterm-dropdown">
-        <li class="dropdown-header">Midterm Exams</li>
         <li>
           <a href="https://github.com/SpicyKalamares/CPE232_HOA6">CPE232_HOA6</a>
         </li>
