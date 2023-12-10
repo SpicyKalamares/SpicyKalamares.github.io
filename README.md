@@ -88,19 +88,19 @@
       <button class="dropdown-btn dropdown-arrow" id="prelim-period">Prelim Period</button>
       <ul class="dropdown" id="prelim-dropdown">
         <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA1">CPE232_HOA1 - xdxd</a>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA1">CPE232_HOA1 - Creating Virtual Machine</a>
         </li>
         <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA2">CPE232_HOA2</a>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA2">CPE232_HOA2 - SSH Key-Based Authentication and GIT Setup</a>
         </li>
         <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA3">CPE232_HOA3</a>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA3">CPE232_HOA3 - Install SSH server on CentOS or RHEL 8</a>
         </li>
         <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA4">CPE232_HOA4</a>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA4">CPE232_HOA4 - Ansible Basics</a>
         </li>
         <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA5">CPE232_HOA5</a>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA5">CPE232_HOA5 - Implement Ansible Roles in Playbook</a>
         </li>
         <!-- Include Prelim Exam in the Prelim Period dropdown -->
         <li class="dropdown-header">Prelim Exam</li>
@@ -114,19 +114,19 @@
       <button class="dropdown-btn dropdown-arrow" id="midterm-period">Midterm Period</button>
       <ul class="dropdown" id="midterm-dropdown">
         <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA6">CPE232_HOA6</a>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA6">CPE232_HOA6 - Targeting Specific Nodes</a>
         </li>
         <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA7">CPE232_HOA7</a>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA7">CPE232_HOA7 - Managing Files and Creating Roles in Ansible</a>
         </li>
         <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA8">CPE232_HOA8</a>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA8">CPE232_HOA8 - Install, Configure, and Manage Enterprise Availability Monitoring via Ansible</a>
         </li>
         <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA9">CPE232_HOA9</a>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA9">CPE232_HOA9 - Install, Configure, and Manage Enterprise Availability Performance via Ansible</a>
         </li>
         <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA10">CPE232_HOA10</a>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA10">CPE232_HOA10 - Install, Configure, and Manage Enterprise Log Monitoring via Ansible</a>
         </li>
         <!-- Include Midterm Exam in the Midterm Period dropdown -->
         <li class="dropdown-header">Midterm Exam</li>
@@ -138,7 +138,23 @@
     <li>
       <i class="fas fa-code icon"></i>
       <button class="dropdown-btn dropdown-arrow" id="final-period">Final Period</button>
-      <ul class="dropdown" id="final-dropdown"></ul>
+      <ul class="dropdown" id="final-dropdown">
+        <li>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA11">CPE232_HOA11 - Containerization</a>
+        </li>
+        <li>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA12">CPE232_HOA12 - Build a Sample Web App in a Docker Container</a>
+        </li>
+        <li>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA13">CPE232_HOA13 - OpenStack Prerequisite Installation</a>
+        </li>
+        <li>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA14">CPE232_HOA14 - OpenStack Installation (Keystone, Glance, Nova)</a>
+        </li>
+        <li>
+          <a href="https://github.com/SpicyKalamares/CPE232_HOA15">CPE232_HOA15 - OpenStack Installation (Neutron, Horizon, Cinder)</a>
+        </li>
+      </ul>
     </li>
     <li>
       <h1>Reflection and Learning from the course</h1>
@@ -150,17 +166,10 @@
     document.addEventListener('DOMContentLoaded', function () {
       const username = 'SpicyKalamares';
 
-      const finalRepositories = [
-        'CPE232_HOA11',
-        'CPE232_HOA12',
-        'CPE232_HOA13',
-        'CPE232_HOA14',
-        'CPE232_HOA15',
-        'Reyes_FinalExam'
-      ];
-
       // Display the specified repositories for Final Period
       const finalRepositoriesList = document.getElementById('final-dropdown');
+      finalRepositoriesList.style.display = 'none';
+
       finalRepositories.forEach(repoName => {
         const listItem = document.createElement('li');
         const link = document.createElement('a');
@@ -172,25 +181,53 @@
         finalRepositoriesList.appendChild(listItem);
       });
 
+      // Display the specified repositories for Prelim Period
+      const prelimRepositoriesList = document.getElementById('prelim-dropdown');
+      prelimRepositoriesList.style.display = 'none';
+
+      prelimRepositories.forEach(repoName => {
+        const listItem = document.createElement('li');
+        const link = document.createElement('a');
+
+        link.href = `https://github.com/${username}/${repoName}`;
+        link.textContent = repoName;
+
+        listItem.appendChild(link);
+        prelimRepositoriesList.appendChild(listItem);
+      });
+
+      // Display the specified repositories for Midterm Period
+      const midtermRepositoriesList = document.getElementById('midterm-dropdown');
+      midtermRepositoriesList.style.display = 'none';
+
+      midtermRepositories.forEach(repoName => {
+        const listItem = document.createElement('li');
+        const link = document.createElement('a');
+
+        link.href = `https://github.com/${username}/${repoName}`;
+        link.textContent = repoName;
+
+        listItem.appendChild(link);
+        midtermRepositoriesList.appendChild(listItem);
+      });
+
       // Add click event listener to Final Period button
       document.getElementById('final-period').addEventListener('click', function () {
         // Toggle the visibility of the Final repositories list
         finalRepositoriesList.style.display = finalRepositoriesList.style.display === 'none' ? 'block' : 'none';
       });
-    });
 
-    // Add click event listener to Prelim Period button
-    document.getElementById('prelim-period').addEventListener('click', function () {
-      // Toggle the visibility of the Prelim repositories list
-      const prelimDropdown = document.getElementById('prelim-dropdown');
-      prelimDropdown.style.display = prelimDropdown.style.display === 'none' ? 'block' : 'none';
-    });
+      // Add click event listener to Prelim Period button
+      document.getElementById('prelim-period').addEventListener('click', function () {
+        // Toggle the visibility of the Prelim repositories list
+        prelimRepositoriesList.style.display = prelimRepositoriesList.style.display === 'none' ? 'block' : 'none';
+      });
 
-    // Add click event listener to Midterm Period button
-    document.getElementById('midterm-period').addEventListener('click', function () {
-      // Toggle the visibility of the Midterm repositories list
-      const midtermDropdown = document.getElementById('midterm-dropdown');
-      midtermDropdown.style.display = midtermDropdown.style.display === 'none' ? 'block' : 'none';
+      // Add click event listener to Midterm Period button
+      document.getElementById('midterm-period').addEventListener('click', function () {
+        // Toggle the visibility of the Midterm repositories list
+        midtermRepositoriesList.style.display = midtermRepositoriesList.style.display === 'none' ? 'block' : 'none';
+      });
     });
   </script>
 </body>
