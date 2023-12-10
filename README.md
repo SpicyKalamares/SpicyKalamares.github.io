@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -103,13 +103,36 @@
     document.addEventListener('DOMContentLoaded', function () {
       const username = 'SpicyKalamares';
 
-      const prelimExamRepositories = ['Reyes_PrelimExam'];
-      const midtermExamRepositories = ['Reyes_MidtermExam'];
-      const finalExamRepositories = ['Reyes_FinalExam'];
+      const prelimRepositories = [
+        'CPE232_HOA1',
+        'CPE232_HOA2',
+        'CPE232_HOA3',
+        'CPE232_HOA4',
+        'CPE232_HOA5',
+        'Reyes_PrelimExam'
+      ];
+
+      const midtermRepositories = [
+        'CPE232_HOA6',
+        'CPE232_HOA7',
+        'CPE232_HOA8',
+        'CPE232_HOA9',
+        'CPE232_HOA10',
+        'Reyes_MidtermExam'
+      ];
+
+      const finalRepositories = [
+        'CPE232_HOA11',
+        'CPE232_HOA12',
+        'CPE232_HOA13',
+        'CPE232_HOA14',
+        'CPE232_HOA15',
+        'Reyes_FinalExam'
+      ];
 
       // Display the specified repositories for Prelim Period
-      const prelimExamRepositoriesList = document.getElementById('prelim-dropdown');
-      prelimExamRepositories.forEach(repoName => {
+      const prelimRepositoriesList = document.getElementById('prelim-dropdown');
+      prelimRepositories.forEach(repoName => {
         const listItem = document.createElement('li');
         const link = document.createElement('a');
 
@@ -117,18 +140,18 @@
         link.textContent = repoName;
 
         listItem.appendChild(link);
-        prelimExamRepositoriesList.appendChild(listItem);
+        prelimRepositoriesList.appendChild(listItem);
       });
 
       // Add click event listener to Prelim Period button
       document.getElementById('prelim-period').addEventListener('click', function () {
         // Toggle the visibility of the Prelim repositories list
-        prelimExamRepositoriesList.style.display = prelimExamRepositoriesList.style.display === 'none' ? 'block' : 'none';
+        prelimRepositoriesList.style.display = prelimRepositoriesList.style.display === 'none' ? 'block' : 'none';
       });
 
       // Display the specified repositories for Midterm Period
-      const midtermExamRepositoriesList = document.getElementById('midterm-dropdown');
-      midtermExamRepositories.forEach(repoName => {
+      const midtermRepositoriesList = document.getElementById('midterm-dropdown');
+      midtermRepositories.forEach(repoName => {
         const listItem = document.createElement('li');
         const link = document.createElement('a');
 
@@ -136,18 +159,18 @@
         link.textContent = repoName;
 
         listItem.appendChild(link);
-        midtermExamRepositoriesList.appendChild(listItem);
+        midtermRepositoriesList.appendChild(listItem);
       });
 
       // Add click event listener to Midterm Period button
       document.getElementById('midterm-period').addEventListener('click', function () {
         // Toggle the visibility of the Midterm repositories list
-        midtermExamRepositoriesList.style.display = midtermExamRepositoriesList.style.display === 'none' ? 'block' : 'none';
+        midtermRepositoriesList.style.display = midtermRepositoriesList.style.display === 'none' ? 'block' : 'none';
       });
 
       // Display the specified repositories for Final Period
-      const finalExamRepositoriesList = document.getElementById('final-dropdown');
-      finalExamRepositories.forEach(repoName => {
+      const finalRepositoriesList = document.getElementById('final-dropdown');
+      finalRepositories.forEach(repoName => {
         const listItem = document.createElement('li');
         const link = document.createElement('a');
 
@@ -155,13 +178,13 @@
         link.textContent = repoName;
 
         listItem.appendChild(link);
-        finalExamRepositoriesList.appendChild(listItem);
+        finalRepositoriesList.appendChild(listItem);
       });
 
       // Add click event listener to Final Period button
       document.getElementById('final-period').addEventListener('click', function () {
         // Toggle the visibility of the Final repositories list
-        finalExamRepositoriesList.style.display = finalExamRepositoriesList.style.display === 'none' ? 'block' : 'none';
+        finalRepositoriesList.style.display = finalRepositoriesList.style.display === 'none' ? 'block' : 'none';
       });
     });
   </script>
