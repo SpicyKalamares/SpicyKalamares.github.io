@@ -68,69 +68,21 @@
       <i class="fas fa-code icon"></i>
       <button class="dropdown-btn dropdown-arrow" id="prelim-period">Prelim Period</button>
       <ul class="dropdown" id="prelim-dropdown">
-        <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA1">CPE232_HOA1</a>
-        </li>
-        <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA2">CPE232_HOA2</a>
-        </li>
-        <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA3">CPE232_HOA3</a>
-        </li>
-        <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA4">CPE232_HOA4</a>
-        </li>
-        <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA5">CPE232_HOA5</a>
-        </li>
-        <!-- Include Prelim Exam in the Prelim Period dropdown -->
-        <li>
-          <h3>Prelim Exam</h3>
-          <a href="https://github.com/SpicyKalamares/Reyes_PrelimExam">Reyes_PrelimExam</a>
-        </li>
+        <!-- Placeholder for Prelim repositories -->
       </ul>
     </li>
     <li>
       <i class="fas fa-code icon"></i>
       <button class="dropdown-btn dropdown-arrow" id="midterm-period">Midterm Period</button>
       <ul class="dropdown" id="midterm-dropdown">
-        <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA6">CPE232_HOA6</a>
-        </li>
-        <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA7">CPE232_HOA7</a>
-        </li>
-        <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA8">CPE232_HOA8</a>
-        </li>
-        <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA9">CPE232_HOA9</a>
-        </li>
-        <li>
-          <h3>Midterm Exam</h3>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA10">CPE232_HOA10</a>
-        </li>
+        <!-- Placeholder for Midterm repositories -->
       </ul>
     </li>
     <li>
       <i class="fas fa-code icon"></i>
       <button class="dropdown-btn dropdown-arrow" id="final-period">Final Period</button>
       <ul class="dropdown" id="final-dropdown">
-        <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA11">CPE232_HOA11</a>
-        </li>
-        <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA12">CPE232_HOA12</a>
-        </li>
-        <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA13">CPE232_HOA13</a>
-        </li>
-        <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA14">CPE232_HOA14</a>
-        </li>
-        <li>
-          <a href="https://github.com/SpicyKalamares/CPE232_HOA15">CPE232_HOA15</a>
-        </li>
+        <!-- Placeholder for Final repositories -->
       </ul>
     </li>
     <li>
@@ -142,9 +94,12 @@
   <script>
     const username = 'SpicyKalamares';
 
+    const prelimExamRepositories = ['CPE232_HOA1', 'CPE232_HOA2', 'CPE232_HOA3', 'CPE232_HOA4', 'CPE232_HOA5'];
+    const midtermExamRepositories = ['CPE232_HOA6', 'CPE232_HOA7', 'CPE232_HOA8', 'CPE232_HOA9', 'CPE232_HOA10'];
+    const finalExamRepositories = ['CPE232_HOA11', 'CPE232_HOA12', 'CPE232_HOA13', 'CPE232_HOA14', 'CPE232_HOA15'];
+
     // Display the specified repositories for Prelim Period
     const prelimExamRepositoriesList = document.getElementById('prelim-dropdown');
-    const prelimDropdown = document.getElementById('prelim-dropdown');
 
     prelimExamRepositories.forEach(repoName => {
       const listItem = document.createElement('li');
@@ -160,12 +115,11 @@
     // Add click event listener to Prelim Period button
     document.getElementById('prelim-period').addEventListener('click', function() {
       // Toggle the visibility of the Prelim repositories list
-      prelimDropdown.style.display = prelimDropdown.style.display === 'none' ? 'block' : 'none';
+      prelimExamRepositoriesList.style.display = prelimExamRepositoriesList.style.display === 'none' ? 'block' : 'none';
     });
 
     // Display the specified repositories for Midterm Period
     const midtermExamRepositoriesList = document.getElementById('midterm-dropdown');
-    const midtermDropdown = document.getElementById('midterm-dropdown');
 
     midtermExamRepositories.forEach(repoName => {
       const listItem = document.createElement('li');
@@ -181,12 +135,11 @@
     // Add click event listener to Midterm Period button
     document.getElementById('midterm-period').addEventListener('click', function() {
       // Toggle the visibility of the Midterm repositories list
-      midtermDropdown.style.display = midtermDropdown.style.display === 'none' ? 'block' : 'none';
+      midtermExamRepositoriesList.style.display = midtermExamRepositoriesList.style.display === 'none' ? 'block' : 'none';
     });
 
     // Display the specified repositories for Final Period
     const finalExamRepositoriesList = document.getElementById('final-dropdown');
-    const finalDropdown = document.getElementById('final-dropdown');
 
     finalExamRepositories.forEach(repoName => {
       const listItem = document.createElement('li');
@@ -202,7 +155,7 @@
     // Add click event listener to Final Period button
     document.getElementById('final-period').addEventListener('click', function() {
       // Toggle the visibility of the Final repositories list
-      finalDropdown.style.display = finalDropdown.style.display === 'none' ? 'block' : 'none';
+      finalExamRepositoriesList.style.display = finalExamRepositoriesList.style.display === 'none' ? 'block' : 'none';
     });
   </script>
 </body>
